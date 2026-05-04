@@ -229,7 +229,7 @@ class DataArguments:
 @dataclass
 class TevatronTrainingArguments(TrainingArguments):
     lr_scheduler_type: str = field(
-        default="linear", metadata={"help": "The scheduler type to use."}
+        default="constant", metadata={"help": "The scheduler type to use."}
     )
     warmup_ratio: float = field(default=0.0)
 
